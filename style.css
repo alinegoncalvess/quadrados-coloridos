@@ -1,0 +1,53 @@
+/* Configuração geral */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container-principal {
+    display: grid;
+    grid-template-columns: repeat(5, 100px); 
+    gap: 5px; /* Espaçamento entre os quadrados */
+}
+
+/* Quadrados padrão */
+.square {
+    display: inline-block;
+    width: 100px; 
+    height: 100px;
+    background-color: red;
+    border: 1px solid black; 
+    transition: background-color 0.3s ease;
+}
+
+/* Quadrados internos com cores diferentes */
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+/* Estilo dos cantos */
+.canto {
+    border: 2px solid black; /* Bordas mais escuras para os cantos */
+}
+
+.canto:hover {
+    background-color: purple; /* Muda a cor ao passar o mouse */
+}
